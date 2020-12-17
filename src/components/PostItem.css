@@ -1,0 +1,8 @@
+#post-item h3 {
+    font-size: 22px;
+}
+
+#post-item h3::first-letter,
+#post-item p::first-letter {
+    text-transform: capitalize;
+}

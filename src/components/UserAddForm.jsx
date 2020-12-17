@@ -1,12 +1,15 @@
 import React from 'react';
 import './UserAddForm.css';
+
 class UserAddForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             name: '',
             email: '',
-            isGoldClient: false
+            isGoldClient: false,
+            salary: '',
+            image: ''
         };
     }
 
@@ -22,28 +25,45 @@ class UserAddForm extends React.Component {
         this.setState({isGoldClient: event.target.checked});
     }
 
+    updateSalary(event) {
+        this.setState({salary: event.target.value + '£'});
+    }
+
+    updateImage(event) {
+        this.setState({image: event.target.value});
+    }
+
     render() {
-        const {name, email, isGoldClient} = this.state;
+        const {name, email, isGoldClient, salary, image} = this.state;
 
         return (
             <form
                 className="user-add-form"
-                onSubmit={(event) => this.props.submitAddForm(event, name, email, isGoldClient)}
+                onSubmit={(event) => this.props.submitAddForm(event, name, email, isGoldClient, salary, image)}
             >
-                <h2>Adauga utilizatori:</h2>
-                <label htmlFor="name">Nume:</label>
+                <h2>Add users:</h2>
+                <label htmlFor="name">Name:</label>
                 <input
                     type="text"
                     name="name"
                     onChange={(event) => this.updateName(event)}
+                    required
                 />
                 <label htmlFor="email">Email:</label>
                 <input
-                    type="text"
+                    type="email"
                     name="email"
                     onChange={(event) => this.updateEmail(event)}
                 />
-                <label htmlFor="is-gold-client">Client GOLD</label>
+
+                <label htmlFor="salary">Salary:</label>
+                <input 
+                    type="text" 
+                    name="salary"
+                    onChange={(event) => this.updateSalary(event)}
+                />
+
+                <label htmlFor="is-gold-client">GOLD Client</label>
                 <input
                     type="checkbox"
                     name="is-gold-client"
@@ -51,7 +71,7 @@ class UserAddForm extends React.Component {
                     onChange={(event) => this.updateIsGoldClient(event)}
                 />
 
-                <input type="submit" value="Introdu utilizatorul"/>
+                <input id="submit-button" type="submit" value="Submit"/>
             </form>
         )
     }

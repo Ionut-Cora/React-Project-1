@@ -1,0 +1,59 @@
+#user {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    min-width: 40%;
+    max-width: 40%;
+    margin: 20px;
+    border: 2px solid #e6e6e6;
+    border-radius: 1%;
+    padding: 20px;
+    background: #f2f2f2;
+    position: relative;
+}
+
+#user div {
+    width: 40%;
+    overflow-wrap: break-word;
+}
+
+#user img {
+    width: 120px;
+    margin: auto;
+}
+
+#img {
+    display: flex;
+}
+
+#user h3 {
+    font-size: 25px;
+}
+
+#user p {
+    font-size: 20px;
+}
+
+#user button {
+    align-self: center;
+    height: 30px;
+    background: #ff6666;
+    border: 2px solid #808080;
+    border-radius: 5%;
+    font-weight: bold;
+    color: #1a1a1a;
+    position: absolute;
+    bottom: 10px;
+}
+
+#user button:hover {
+    background: #ff4d4d;
+    border: 2px solid #808080;
+    color: #1a1a1a;
+}
+
+#user button:active {
+    background: #ff3333;
+    border: 2px solid #808080;
+    color: #1a1a1a;
+}

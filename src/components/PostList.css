@@ -1,0 +1,8 @@
+#postList {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+#postList p {
+    font-size: 18px;
+}

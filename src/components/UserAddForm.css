@@ -1,12 +1,33 @@
 h2 {
     font-style: italic;
+    font-size: 30px;
 }
 
 .user-add-form {
     display: flex;
     flex-direction: column;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .user-add-form input {
     max-width: 50%;
+    margin-bottom: 20px;
+}
+
+#submit-button {
+    max-width: 150px;
+    height: 30px;
+    background: #00ff80;
+    border-radius: 5%;
+    font-weight: bold;
+}
+
+#submit-button:hover {
+    background: #00e673;
+}
+
+#submit-button:active {
+    background: #00cc66;
 }
