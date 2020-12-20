@@ -4,5 +4,117 @@
 }
 
 .app h1 {
+  
+}
+
+.app h1 {
+  text-align: center;
+  font-size: 50px;
+  padding: 50px 0;
   margin-top: 0;
+}
+
+#input,
+#button {
+  padding: 20px;
+  margin-left: 20px;
+}
+
+#input {
+  display: flex;
+  justify-content: space-between;
+  max-width: 80%;
+  margin: 20px auto;
+}
+
+#input h3 {
+  font-size: 25px;
+}
+
+#label-input {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 25px;
+}
+
+#label-input label {
+  font-size: 20px;
+}
+
+#label-input span,
+#about span {
+  position: relative;
+  top: 5px;
+  margin: 0 5px;
+}
+
+#button {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+#button button {
+  width: 200px;
+  height: 40px;
+  border-radius: 5%;
+  color: #1a1a1a;
+  font-weight: bold;
+  margin-left: 23%;
+}
+
+#button1 {
+  background: #ffad33;
+}
+
+#button1:hover {
+  background: #ffa31a;
+}
+
+#button1:active {
+  background: #ff9900;
+}
+
+#button2 {
+  background: #ffd633;
+}
+
+#button2:hover {
+  background: #ffcc00;
+}
+
+#button2:active {
+  background: #e6b800;
+}
+
+#about,
+#footer {
+  display: flex;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+#about h4 {
+  font-size: 20px;
+}
+
+#about-link {
+  text-decoration: none;
+  margin-top: 28px;
+  font-size: 20px;
+  max-height: 32px;
+  border-radius: 5%;
+  color: #1a1a1a;
+  background: #fff;
+}
+
+#about-link:hover {
+  color: #fff;
+  background: #000;
+}
+
+#footer {
+  justify-content: center;
+  color: #404040;
 }
